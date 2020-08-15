@@ -1,3 +1,3 @@
 # Budget-app
 
-made this while being bored of lockdown :P
+while being bored of lockdown :P
