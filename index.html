@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- User JS -->
+        <script type="text/javascript" src="./script.js" async></script>
+        <title>Budget app</title>
+    </head>
+    <body>
+        <div class="container-fluid p-5 text-center bg-light text-body"><!-- First container -->
+            <h2>Budget for <span class="date"></span></h2>
+            <h3>Balance: <span class="budgetValue"></span></h3>
+            <h3>Income: <span class="incomeValue"></span></h3>
+            <h3>Expense: <span class="expenseValue"></span></h3>
+            <h3>Expense Percentage: <span class="expensePercentage"></span></h3>
+            
+            <select class="addType">
+                <option value="inc" selected>+</option>
+                <option value="exp">-</option>
+            </select>
+
+            <input type="text" class="addDesc" placeholder="Description">
+            <input type="number" class="addValue" placeholder="Value">
+            <button class="addBtn btn btn-outline-dark btn-sm">Submit</button>
+            
+        </div><!-- First container -->
+
+        <div class="container p-5 bg-light text-dark"><!-- Second container -->
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-striped table-hover table-responsive-sm incomeList">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Description</th>
+                                <th>Value</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table class="table table-striped table-hover table-responsive-sm expenseList">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Description</th>
+                                <th>Value</th>
+                                <th>Percent</th>
+                                <th>Delete</th>
+                            </tr>
+                        </tread>
+                    </table>
+                </div>
+            </div>
+        </div><!-- Second container -->
+
+    </body>
+</html>
