@@ -21,15 +21,18 @@
             <h3>Expense: <span class="expenseValue"></span></h3>
             <h3>Expense Percentage: <span class="expensePercentage"></span></h3>
             
-            <select class="addType">
-                <option value="inc" selected>+</option>
-                <option value="exp">-</option>
-            </select>
+            <div class="form-inline">
+                <div class="col align-items-center">
+                    <select class="addType form-control form-control-sm">
+                        <option value="inc" selected>+</option>
+                        <option value="exp">-</option>
+                    </select>
 
-            <input type="text" class="addDesc" placeholder="Description">
-            <input type="number" class="addValue" placeholder="Value">
-            <button class="addBtn btn btn-outline-dark btn-sm">Submit</button>
-            
+                    <input type="text" class="addDesc form-control form-control-sm" placeholder="Description"/>
+                    <input type="number" class="addValue form-control form-control-sm" placeholder="Value">
+                    <button class="addBtn btn btn-outline-dark btn-sm">Submit</button>
+                </div>
+            </div>
         </div><!-- First container -->
 
         <div class="container p-5 bg-light text-dark"><!-- Second container -->
